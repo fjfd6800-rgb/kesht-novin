@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123d2b">
+<title>کشاورزی نوین با کروا | راهنمایی و برنامه کودی</title>
+<meta name="description" content="راهنمایی برای تغذیه اصولی درختان و محصولات کشاورزی، برنامه کودی متناسب با باغ و معرفی کودهای کروا.">
+<style>
+:root{--green:#123d2b;--green2:#1d6b45;--lime:#c9ef77;--cream:#f7f8f0;--ink:#18251e;--muted:#5d6b61;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.9}
+a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+header{background:var(--green);color:#fff;padding:18px 0}.nav{display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-weight:900;font-size:1.15rem;display:flex;align-items:center;gap:10px}.logo{width:42px;height:42px;border-radius:14px;background:var(--lime);color:var(--green);display:grid;place-items:center;font-size:1.5rem}.nav a.small{border:1px solid #ffffff70;border-radius:12px;padding:8px 14px;font-size:.9rem}
+.hero{background:radial-gradient(circle at 15% 20%,#2e8557 0,transparent 28%),linear-gradient(135deg,#123d2b,#0b261b);color:#fff;padding:70px 0 64px;overflow:hidden;position:relative}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:32px}.eyebrow{display:inline-block;color:var(--lime);font-weight:bold;background:#ffffff12;border:1px solid #ffffff30;padding:5px 13px;border-radius:100px;font-size:.9rem}.hero h1{font-size:clamp(2rem,4.5vw,3.6rem);line-height:1.45;margin:18px 0}.hero p{font-size:1.08rem;color:#e0eee5;max-width:650px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.btn{display:inline-flex;justify-content:center;align-items:center;padding:13px 22px;border-radius:14px;font-weight:bold;transition:.2s}.btn.primary{background:var(--lime);color:#143b29}.btn.secondary{border:1px solid #ffffff75;color:white}.btn:hover{transform:translateY(-2px)}.visual{min-height:300px;display:grid;place-items:center;position:relative}.sun{position:absolute;width:245px;height:245px;border-radius:50%;background:#c9ef7730;border:1px solid #c9ef774d}.field{position:relative;width:100%;max-width:390px;height:280px;overflow:hidden;border-radius:28px;background:linear-gradient(#a9d8a4 0 42%,#518b43 42% 58%,#235b35 58%);border:1px solid #ffffff55;box-shadow:0 24px 70px #0004}.field:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(170deg,transparent 0 22px,#174a2caa 23px 28px)}.tree{position:absolute;bottom:45px;width:110px;height:160px}.tree:before{content:"";position:absolute;bottom:0;left:48px;width:15px;height:90px;background:#714c2b;border-radius:8px}.tree:after{content:"";position:absolute;top:0;left:8px;width:95px;height:105px;background:#1f6337;border-radius:45% 50% 42% 48%;box-shadow:20px 22px 0 -7px #3c8747,-18px 24px 0 -6px #347940}.tree.one{left:25px;transform:scale(.75)}.tree.two{left:130px;transform:scale(1.05)}.tree.three{right:8px;transform:scale(.8)}.fruit{position:absolute;z-index:2;width:14px;height:14px;border-radius:50%;background:#f3bd43;box-shadow:26px 25px 0 #f3bd43,-15px 42px 0 #f3bd43,15px 57px 0 #f3bd43}.tree .fruit{top:42px;left:36px}
+.stats{margin-top:-25px;position:relative}.stats-grid{background:#fff;border-radius:22px;box-shadow:0 12px 40px #163d2712;padding:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.stat{padding:8px 16px;text-align:center;border-left:1px solid #e5eae3}.stat:last-child{border-left:0}.stat strong{display:block;font-size:1.12rem;color:var(--green)}.stat span{font-size:.9rem;color:var(--muted)}
+section{padding:64px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 32px}.section-head h2{font-size:clamp(1.6rem,3vw,2.4rem);margin:0 0 8px;color:var(--green)}.section-head p{margin:0;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid #e7ece5;border-radius:20px;padding:24px;box-shadow:0 8px 25px #173b2608}.icon{font-size:1.8rem;width:54px;height:54px;border-radius:16px;background:#edf7df;display:grid;place-items:center}.card h3{margin:14px 0 7px;color:var(--green)}.card p{margin:0;color:var(--muted);font-size:.95rem}.band{background:#eaf3e3}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{padding:22px;border-radius:18px;background:#fff}.number{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;background:var(--green);color:#fff;font-weight:bold}.step h3{margin:12px 0 5px}.step p{margin:0;color:var(--muted);font-size:.94rem}.cta{background:linear-gradient(135deg,#164b32,#0c2a1d);color:#fff;border-radius:28px;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:24px}.cta h2{margin:0 0 8px;font-size:clamp(1.5rem,3vw,2.2rem)}.cta p{margin:0;color:#d8e8dc}.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-box{background:#fff;padding:24px;border-radius:20px;border:1px solid #e7ece5}.contact-box h3{color:var(--green);margin-top:0}.contact-box p{color:var(--muted)}footer{background:#0b261b;color:#d7e6dc;padding:25px 0;font-size:.9rem}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+label{display:block;font-weight:bold;font-size:.92rem;margin:12px 0 5px;color:var(--green)}
+input,select,textarea{width:100%;font:inherit;border:1px solid #d6e0d5;border-radius:11px;padding:11px 12px;background:#fbfcf8;color:var(--ink);outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--green2);box-shadow:0 0 0 3px #1d6b4517}
+textarea{resize:vertical}.contact-box form>.btn{border:0;cursor:pointer;margin-top:16px;width:100%}.form-note{font-size:.82rem;color:var(--muted)}.message-result{margin-top:15px;padding:15px;background:#f1f7eb;border-radius:14px}.btn.secondary.dark{color:var(--green);border-color:#a8c4ad;margin-top:10px;cursor:pointer}.message-result span{display:block;margin-top:8px;color:var(--green);font-size:.9rem}
+
+@media(max-width:760px){.hero{padding:48px 0}.hero-grid{grid-template-columns:1fr}.visual{min-height:240px}.field{height:235px}.stats-grid{grid-template-columns:1fr}.stat{border-left:0;border-bottom:1px solid #e5eae3;padding:12px}.stat:last-child{border-bottom:0}.cards,.steps,.contact{grid-template-columns:1fr}.cta{padding:28px;display:block}.cta .btn{margin-top:20px;width:100%}.nav a.small{font-size:.8rem}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#"><span class="logo">🌱</span><span>کشاورزی نوین با کروا</span></a><a class="small" href="#contact">ارتباط با مشاور</a></div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid"><div>
+<span class="eyebrow">همراه باغدار و کشاورز</span>
+<h1>باغت را اصولی تغذیه کن؛<br>با برنامه، نه حدس و گمان.</h1>
+<p>برای انتخاب کود و زمان مصرف سردرگم نباش. با توجه به نوع محصول، سن درخت و شرایط باغ، برای دریافت راهنمایی و برنامه کودی مناسب اقدام کن.</p>
+<div class="actions"><a class="btn primary" href="https://rubika.ir/kerva2026" target="_blank" rel="noopener">🌿 ورود به کانال روبیکا</a><a class="btn secondary" href="#contact">درخواست راهنمایی کودی</a></div>
+</div><div class="visual" aria-label="تصویر گرافیکی باغ سرسبز"><div class="sun"></div><div class="field"><div class="tree one"><i class="fruit"></i></div><div class="tree two"><i class="fruit"></i></div><div class="tree three"><i class="fruit"></i></div></div></div></div></section>
+<div class="wrap stats"><div class="stats-grid"><div class="stat"><strong>راهنمایی متناسب با باغ شما</strong><span>نوع محصول و سن درخت مهم است</span></div><div class="stat"><strong>تغذیه هدفمند</strong><span>زمان و روش مصرف را جدی بگیرید</span></div><div class="stat"><strong>ارتباط مستقیم</strong><span>سؤال‌هایتان را مطرح کنید</span></div></div></div>
+<section><div class="wrap"><div class="section-head"><h2>چه کمکی به باغ شما می‌کنیم؟</h2><p>هر باغ شرایط خودش را دارد؛ یک نسخه یکسان برای همه باغ‌ها همیشه انتخاب درستی نیست.</p></div><div class="cards">
+<article class="card"><div class="icon">🍊</div><h3>برنامه تغذیه باغ</h3><p>برای مرکبات، گردو، انار، سیب، توت‌فرنگی و دیگر محصولات، درباره برنامه تغذیه و زمان مصرف سؤال کنید.</p></article>
+<article class="card"><div class="icon">🌱</div><h3>آشنایی با کودهای کروا</h3><p>با کاربرد محصولات معرفی‌شده مانند NPKS، اسید هیومیک و فروتست آشنا شوید و انتخاب آگاهانه‌تری داشته باشید.</p></article>
+<article class="card"><div class="icon">🧑‍🌾</div><h3>کمک به تصمیم بهتر</h3><p>سن درخت، نوع محصول، وضعیت خاک و آبیاری را در نظر بگیرید؛ در صورت نیاز، آزمایش خاک و برگ هم می‌تواند کمک‌کننده باشد.</p></article>
+</div></div></section>
+<section class="band"><div class="wrap"><div class="section-head"><h2>از کجا شروع کنیم؟</h2><p>برای اینکه راهنمایی دقیق‌تری بگیرید، این سه مرحله را انجام دهید.</p></div><div class="steps">
+<div class="step"><span class="number">۱</span><h3>محصول و منطقه را بگویید</h3><p>مثلاً پرتقال در مازندران، گردو در گلستان یا انار در خراسان.</p></div>
+<div class="step"><span class="number">۲</span><h3>مشکل باغ را توضیح دهید</h3><p>مثل ریزش میوه، رشد ضعیف، کوچک بودن محصول یا نیاز به برنامه تغذیه.</p></div>
+<div class="step"><span class="number">۳</span><h3>راهنمایی بگیرید</h3><p>با اطلاعات باغ، درباره گزینه‌ها و روش مصرف مناسب سؤال کنید.</p></div>
+</div></div></section>
+<section id="contact"><div class="wrap"><div class="section-head"><h2>برای باغ خودت برنامه کودی بگیر</h2><p>فرم زیر را پر کن تا اطلاعات باغت مرتب شود و بتوانی برای مشاوره ارسالش کنی.</p></div>
+<div class="contact">
+<div class="contact-box">
+<h3>📝 مشخصات باغ یا مزرعه</h3>
+<form id="farmForm">
+<label for="farmerName">نام شما</label><input id="farmerName" name="farmerName" placeholder="مثلاً علی رضایی" autocomplete="name">
+<label for="city">شهر و استان</label><input id="city" name="city" placeholder="مثلاً گرگان، گلستان" required>
+<label for="crop">نوع محصول</label><select id="crop" name="crop" required><option value="">انتخاب کنید</option><option>پرتقال و مرکبات</option><option>گردو</option><option>انار</option><option>سیب</option><option>توت‌فرنگی</option><option>گوجه‌فرنگی</option><option>زعفران</option><option>سایر محصولات</option></select>
+<label for="area">مساحت باغ یا مزرعه</label><input id="area" name="area" placeholder="مثلاً ۱ هکتار">
+<label for="trees">تعداد و سن درختان (در صورت وجود)</label><input id="trees" name="trees" placeholder="مثلاً ۲۷۰ درخت، حدود ۲۰ ساله">
+<label for="problem">مشکل یا هدف شما</label><select id="problem" name="problem" required><option value="">انتخاب کنید</option><option>افزایش باردهی</option><option>درشت‌تر شدن و بهبود کیفیت محصول</option><option>ریزش گل یا میوه</option><option>ضعف رشد و زردی برگ</option><option>خشکی یا ضعف درخت</option><option>برنامه تغذیه کامل</option><option>مشکل دیگر</option></select>
+<label for="details">توضیحات بیشتر</label><textarea id="details" name="details" rows="3" placeholder="زمان آبیاری، کودهای مصرف‌شده و هر نکته‌ای که لازم است..."></textarea>
+<button class="btn primary" type="submit">آماده‌کردن پیام مشاوره</button>
+<p class="form-note">با زدن این دکمه، متن مشخصات باغ آماده و قابل کپی می‌شود. این فرم اطلاعات را خودکار به جایی ارسال نمی‌کند.</p>
+<div id="messageResult" class="message-result" hidden><label for="preparedMessage">پیام آماده برای ارسال</label><textarea id="preparedMessage" rows="9" readonly></textarea><button type="button" class="btn secondary dark" id="copyMessage">کپی پیام</button><span id="copyStatus" aria-live="polite"></span></div>
+</form>
+</div>
+<div class="contact-box">
+<h3>🌿 عضویت در کانال کروا</h3><p>برای دنبال‌کردن معرفی محصولات و نکات تغذیه گیاه، وارد کانال شو.</p><a class="btn primary" href="https://rubika.ir/kerva2026" target="_blank" rel="noopener">ورود به کانال روبیکا</a>
+<hr style="border:0;border-top:1px solid #e7ece5;margin:24px 0">
+<h3>📌 برای مشاوره دقیق‌تر</h3><p>اطلاعاتی مانند نوع محصول، شهر، مساحت، سن درختان، روش آبیاری و کودهای قبلی کمک می‌کند راهنمایی دقیق‌تری بگیری. در صورت امکان، عکس برگ، تنه یا میوه آسیب‌دیده و نتیجه آزمایش خاک یا برگ را هم آماده کن.</p>
+<p><strong>نکته:</strong> برنامه نهایی باید با شرایط واقعی باغ و در صورت نیاز آزمایش خاک و برگ تنظیم شود؛ نتیجه یا افزایش محصول تضمین‌شده نیست.</p>
+</div></div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© کشاورزی نوین با کروا</span><span>تغذیه اصولی گیاه، تصمیم آگاهانه‌تر</span></div></footer>
+
+<script>
+document.getElementById('farmForm').addEventListener('submit', function(e){
+ e.preventDefault();
+ const v=id=>document.getElementById(id).value.trim() || 'ذکر نشده';
+ const msg = `سلام، برای دریافت راهنمایی و برنامه کودی باغم پیام می‌دهم.\nنام: ${v('farmerName')}\nشهر و استان: ${v('city')}\nنوع محصول: ${v('crop')}\nمساحت: ${v('area')}\nتعداد و سن درختان: ${v('trees')}\nمشکل یا هدف: ${v('problem')}\nتوضیحات: ${v('details')}\nلطفاً برای بررسی شرایط باغ راهنمایی‌ام کنید.`;
+ document.getElementById('preparedMessage').value = msg;
+ document.getElementById('messageResult').hidden = false;
+ document.getElementById('messageResult').scrollIntoView({behavior:'smooth',block:'nearest'});
+});
+document.getElementById('copyMessage').addEventListener('click', async function(){
+ const box=document.getElementById('preparedMessage');
+ try { await navigator.clipboard.writeText(box.value); document.getElementById('copyStatus').textContent='پیام کپی شد؛ حالا آن را در پیام‌رسان موردنظرت ارسال کن.'; }
+ catch(e){ box.focus(); box.select(); document.getElementById('copyStatus').textContent='متن انتخاب شد؛ آن را کپی کن.'; }
+});
+</script>
+
+</body></html>
